@@ -1,6 +1,15 @@
 {
     "tasks": {
-        "bench": "deno bench --unstable --allow-read bench.js",
+        /* 
+          Permissions 
+           --allow-read for dynamic loading of wasm
+           --allow-net for dynamic loading of modules which in turns imports from deno.land
+        */
+        "bench": "deno bench --unstable --allow-read --allow-net bench.js",
+
+        /* 
+           Build scripts for implementations
+        */
         "build-simplewasm": "emcc -O3 -s WASM_BIGINT --no-entry implementations/simplewasm/src/index.c -o implementations/simplewasm/index.wasm"
     }
 }

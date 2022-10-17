@@ -1,4 +1,4 @@
-import { AllImplementations } from "./implementations.js";
+import { AllImplementations } from "./implementations/importer.js";
 
 console.log("");
 console.log("Activated implementations:")
