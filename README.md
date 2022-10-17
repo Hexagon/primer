@@ -4,28 +4,24 @@ Deno example/benchmark showing prime number calculation on pure javascript vs. w
 
 <img src="/primer.png">
 
-### För att provköra
+### Running
 
-#### Installera Deno
+Running the bemchmark require no special tools, just make sure deno is installed ([https://deno.land/#installation](instructions)).
 
-https://deno.land/#installation
-
-#### Kör!
+Then ...
 
 ```deno task benchmark```
 
-### För att bygga en wasm-modul
+### Adding a new prime calculation implementation
 
-För att c -> webassembly krävs emscriptem SDK
+1.   Add new folder `implementations/<name of implementation>`
+2.   Add `index.js` which is the implementation entrypoint, index.js should export name (string), description (string) and checkPrime (function)
+3.   **WASM only:**  If adding a wasm implementation, also add `src/index.c`, a new build task in `deno.jsonc` which generates `index.wasm`
+4.   **WASM only:**  Build your module by running ```deno task build-simplewasm```
+5.   Add import of your implementation in `/implementations.js`
 
-#### Installera emscriptem sdk (kräver python på burken, 3.9 från windows store funkade fint, säkert andra versioner också)
+See `implementations/simplejs` or `implementations/simplewasm` for examples.
 
-https://emscripten.org/docs/getting_started/downloads.html
+#### WASM prerequisites
 
-#### Bygg index.c -> index.wasm
-
-```deno task build-simplewasm```
-
-Eller manuellt ...
-
-```emcc -O3 -s WASM_BIGINT --no-entry implementations/simplewasm/src/index.c -o implementations/simplewasm/index.wasm```
+Install Emscriptem SDK as described [here](https://emscripten.org/docs/getting_started/downloads.html).
