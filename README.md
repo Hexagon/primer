@@ -2,6 +2,8 @@
 
 Deno example/benchmark showing prime number calculation on pure javascript vs. wasm
 
+<img src="/primer.png">
+
 ### För att provköra
 
 #### Installera Deno
