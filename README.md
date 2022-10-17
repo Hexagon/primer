@@ -28,14 +28,14 @@ Install Emscriptem SDK as described [here](https://emscripten.org/docs/getting_s
 
 ### Folder structure
     .
-    ├── implementations             # Compiled files (alternatively `dist`)
-    │   ├── <implementation-name>   # One directory for each implementation
-    │   │   ├── src                 # WASM source folder (optional)
-    |   |   |    └── index.c        # WASN source (optional)   
-    |   |   ├── index.wasm          # Compiled wasm module (optional)    
-    |   │   └── index.js            # implementation entrypoint
+    ├── implementations             
+    │   ├── <implementation-name>   # One folder for each implementation, containg:
+    │   │   ├── src                    # WASM source folder (optional)
+    |   |   |    └── index.c           # WASN source (optional)   
+    |   |   ├── index.wasm             # Compiled wasm module (optional)    
+    |   │   └── index.js               # implementation entrypoint
     │   ├── ...                     # More implementations                      
-    │   └── importer.js             # Helper which automatically imports all implementations
+    │   └── importer.js             # Helper that automatically imports all implementations
     ├── deno.jsonc                  # Deno task configuration
     ├── bench.js                    # Benchark runner, normally started using `deno task bench`
     ├── test.js                     # Test runner, normally started using `deno task test`
