@@ -9,7 +9,7 @@ function checkPrime(num) {
     return true;
 }
 
-// Varje implementation exporterar en funktion som heter checkPrime, tillsammans med ett namn och en beskrivning
+// Export
 const 
     name = "Simple JS",
     description = "Simple implementation in pure javascript";

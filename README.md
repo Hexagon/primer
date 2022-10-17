@@ -16,7 +16,7 @@ Then ...
 
 1.   Add new folder `implementations/<name of implementation>`
 2.   Add `index.js` which is the implementation entrypoint, index.js should export name (string), description (string) and checkPrime (function)
-3.   **WASM only:**  If adding a wasm implementation, also add `src/index.c`, a new build task in `deno.jsonc` which generates `index.wasm`
+3.   **WASM only:**  If adding a wasm implementation, also add `src/index.c`, and a new build task in `deno.jsonc` which generates `index.wasm`
 4.   **WASM only:**  Build your module by running ```deno task build-simplewasm```
 5.   Add import of your implementation in `/implementations.js`
 
