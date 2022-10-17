@@ -10,6 +10,7 @@ const wasmInstance = new WebAssembly.Instance(wasmModule);
 const 
     name = "Simple WASM",
     description = "Simple implementation in pure WASM",
+    type = "wasm",
     checkPrime = wasmInstance.exports.checkPrime;
 
-export { name, description, checkPrime };
+export { name, type, description, checkPrime };

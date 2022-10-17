@@ -15,9 +15,10 @@ Then ...
 ### Adding a new prime calculation implementation
 
 1.   Add new folder `implementations/<name of implementation>`
-2.   Add `index.js` which is the implementation entrypoint, index.js should export name (string), description (string) and checkPrime (function)
+2.   Add `index.js` which is the implementation entrypoint, index.js should export name (string), type (string), description (string) and checkPrime (function)
 3.   **WASM only:**  If adding a wasm implementation, also add `src/index.c`, and a new build task in `deno.jsonc` which generates `index.wasm`
 4.   **WASM only:**  Build your module by running ```deno task build-<name of implementation>```
+5.   Make sure your implementation pass all tests by running ```deno task test```
 
 See `implementations/simplejs` or `implementations/simplewasm` for examples.
 

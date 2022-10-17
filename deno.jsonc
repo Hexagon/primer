@@ -6,7 +6,7 @@
            --allow-net for dynamic loading of modules which in turns imports from deno.land
         */
         "bench": "deno bench --unstable --allow-read --allow-net bench.js",
-
+        "test": "deno test --unstable --allow-read --allow-net tests.js",
         /* 
            Build scripts for implementations
         */
