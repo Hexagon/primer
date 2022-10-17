@@ -6,7 +6,7 @@ Deno example/benchmark showing prime number calculation on pure javascript vs. w
 
 ### Running
 
-Running the bemchmark require no special tools, just make sure deno is installed ([https://deno.land/#installation](https://deno.land/#installation)).
+No special tools required, just make sure Deno is installed ([https://deno.land/#installation](https://deno.land/#installation)).
 
 Then ...
 
