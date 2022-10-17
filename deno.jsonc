@@ -1,0 +1,6 @@
+{
+    "tasks": {
+        "bench": "deno bench --unstable --allow-read bench.js",
+        "build-simplewasm": "emcc -O3 -s WASM_BIGINT --no-entry implementations/simplewasm/src/index.c -o implementations/simplewasm/index.wasm"
+    }
+}
