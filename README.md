@@ -35,7 +35,7 @@ Install Emscriptem SDK as described [here](https://emscripten.org/docs/getting_s
     |   |   ├── index.wasm          # Compiled wasm module (optional)    
     |   │   └── index.js            # implementation entrypoint
     │   ├── ...                     # More implementations                      
-    │   └── importer.js             # Helper which automatically imports all implementation and export then bundled
+    │   └── importer.js             # Helper which automatically imports all implementations
     ├── deno.jsonc                  # Deno task configuration
     ├── bench.js                    # Benchark runner, normally started using `deno task bench`
     ├── test.js                     # Test runner, normally started using `deno task test`
