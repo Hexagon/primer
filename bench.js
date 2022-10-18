@@ -17,7 +17,7 @@ for(const impl of AllImplementations) {
         }
     });
 
-    Deno.bench(`${impl.name.padEnd(15," ")}: FindFind all primes 1000000000-1000001000`, { group: "1000000000to1000001000" }, () => {
+    Deno.bench(`${impl.name.padEnd(15," ")}: Find all primes 1000000000-1000001000`, { group: "1000000000to1000001000" }, () => {
         for(let i = 1000000000n; i <= 1000001000n; i++) {
             impl.checkPrime(i);
         }

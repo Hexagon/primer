@@ -11,6 +11,7 @@
            Build scripts for implementations
         */
         "build-emsdkwasm": "emcc -O3 -s WASM_BIGINT --no-entry implementations/emsdkwasm/src/index.c -o implementations/emsdkwasm/index.wasm",
-        "build-aswasm": "cd implementations/aswasm && npm run asbuild"
+        "build-aswasm": "cd implementations/aswasm && npm run asbuild",
+        "build-optaswasm": "cd implementations/opt-aswasm && npm run asbuild"
     }
 }
