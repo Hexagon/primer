@@ -8,7 +8,7 @@ const wasmInstance = new WebAssembly.Instance(wasmModule);
 
 // Export
 const 
-    name = "AssemblyScript WASM",
+    name = "AS WASM",
     description = "Simple WASM implementation build with AssemblyScript",
     type = "wasm",
     checkPrime = wasmInstance.exports.checkPrime;
