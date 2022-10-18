@@ -9,7 +9,7 @@ const wasmInstance = new WebAssembly.Instance(wasmModule);
 // Export
 const 
     name = "EMSDK WASM",
-    description = "Simple WASM implementation build with Emscripten",
+    description = "Simple WASM implementation built using Emscripten",
     type = "wasm",
     checkPrime = wasmInstance.exports.checkPrime;
 
