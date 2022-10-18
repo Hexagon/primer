@@ -1,6 +1,6 @@
 ## Info
 
-This is basically converted from example 4 on https://flexiple.com/javascript/isprime-javascript/, converted to and compiled by AssembyScript
+This is a simple implementation of checkPrime i WASM, compiled using AssembyScript
 
 The only files from this directory needed at runtime is `index.js` and `build/release.wasm`
 
@@ -14,7 +14,7 @@ To install assemblyscript
 
 ## Build
 
-Use `deno task build-optaswasm` in root folder
+Use `deno task build-aswasm` in root folder
 
 Or 
 
