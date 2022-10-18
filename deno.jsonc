@@ -10,6 +10,7 @@
         /* 
            Build scripts for implementations
         */
-        "build-simplewasm": "emcc -O3 -s WASM_BIGINT --no-entry implementations/simplewasm/src/index.c -o implementations/simplewasm/index.wasm"
+        "build-emsdkwasm": "emcc -O3 -s WASM_BIGINT --no-entry implementations/emsdkwasm/src/index.c -o implementations/emsdkwasm/index.wasm",
+        "build-aswasm": "cd implementations/aswasm && npm run asbuild"
     }
 }
