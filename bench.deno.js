@@ -1,4 +1,4 @@
-import { AllImplementations } from "./implementations/importer.js";
+import { AllImplementations } from "./implementations/importer.deno.js";
 
 console.log("");
 console.log("Activated implementations:")
@@ -11,6 +11,7 @@ console.log("");
 console.log("Starting benchmark");
 
 for(const impl of AllImplementations) {
+
     Deno.bench(`${impl.name.padEnd(15," ")}: Find all primes 0-100000`, { group: "0to1000000" }, () => {
         for(let i = 0n; i <= 100000n; i++) {
             impl.checkPrime(i);

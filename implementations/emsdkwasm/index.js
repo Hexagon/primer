@@ -1,7 +1,5 @@
-import { readAll } from "https://deno.land/std@0.160.0/streams/conversion.ts";
-
-export const f = await Deno.open("./implementations/emsdkwasm/index.wasm")
-const buf = await readAll(f);
+import { readFile } from "../filereader.js";
+const buf = await readFile("./implementations/emsdkwasm/index.wasm");
 
 const wasmModule = new WebAssembly.Module(buf);
 const wasmInstance = new WebAssembly.Instance(wasmModule);

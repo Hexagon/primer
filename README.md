@@ -38,7 +38,7 @@ Other toolchains for building wasm modules includes Rust or Emscriptem.
     │   ├── ...                     # More implementations                      
     │   └── importer.js             # Helper that automatically imports all implementations
     ├── deno.jsonc                  # Deno task configuration
-    ├── bench.js                    # Benchark runner, normally started using `deno task bench`
+    ├── bench.deno.js               # Benchark runner, normally started using `deno task bench`
     ├── test.js                     # Test runner, normally started using `deno task test`
     └── ...
 

@@ -1,7 +1,6 @@
-import { readAll } from "https://deno.land/std@0.160.0/streams/conversion.ts";
+import { readFile } from "../filereader.js";
 
-export const f = await Deno.open("./implementations/opt-aswasm/build/release.wasm")
-const buf = await readAll(f);
+const buf = await readFile("./implementations/opt-aswasm/build/release.wasm");
 
 const wasmModule = new WebAssembly.Module(buf);
 const wasmInstance = new WebAssembly.Instance(wasmModule);

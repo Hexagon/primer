@@ -1,0 +1,23 @@
+{
+  "name": "primer",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Deno example/benchmark showing prime number calculation on pure javascript vs. wasm",
+  "main": "bench.node.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hexagon/primer.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Hexagon/primer/issues"
+  },
+  "homepage": "https://github.com/Hexagon/primer#readme",
+  "dependencies": {
+    "benchmark": "^2.1.4"
+  }
+}
