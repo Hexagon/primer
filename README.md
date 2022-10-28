@@ -32,9 +32,9 @@ See `implementations/simplejs` or `implementations/aswasm` for examples.
 
 #### WASM prerequisites
 
-I recommend AssembyScript for compiling WASM, as it is a oneliner to install if you already have Node.
+I recommend AssembyScript for compiling WASM, as installing it is a oneliner if you already have Node.
 
-Other toolchains for building wasm modules includes Rust or Emscriptem.
+Alternative toolchains for building wasm modules include Rust or Emscriptem.
 
 ### Folder structure
     .
