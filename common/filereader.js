@@ -1,3 +1,6 @@
+// Function to read a file that work in all runtimes. 
+// Created to be able to use implementations in both Node and Deno
+
 async function readFile(fileName) {
     // Deno
     if (typeof Deno !== "undefined") {

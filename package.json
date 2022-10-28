@@ -5,7 +5,8 @@
   "description": "Deno example/benchmark showing prime number calculation on pure javascript vs. wasm",
   "main": "bench.node.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "bench": "node node/bench.js"
   },
   "repository": {
     "type": "git",

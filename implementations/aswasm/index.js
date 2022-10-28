@@ -1,4 +1,4 @@
-import { readFile } from "../filereader.js";
+import { readFile } from "../../common/filereader.js";
 const buf = await readFile("./implementations/aswasm/build/release.wasm");
 
 const wasmModule = new WebAssembly.Module(buf);
