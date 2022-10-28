@@ -6,17 +6,17 @@ Benchmarking project showing prime number calculation on pure JavaScript vs. WAS
 
 ### Running
 
-No special tools required, just make sure the runtime you want to benchmark is installed OR open this repository in a GitHub Codespace, both Deno and Node will be pre-installed and ready to run.
+No special tools required. Just make sure the runtime you want to benchmark is installed, or simply open this repository in a GitHub Codespace - both Deno and Node will be pre-installed and ready to run.
 
 #### Deno
 
-1.   Install a recent version of Denom, see [https://deno.land/#installation](https://deno.land/#installation).
-2.   Run by ```deno task bench```
+1.   Install a recent version of Deno, see [https://deno.land/#installation](https://deno.land/#installation).
+2.   Run using command ```deno task bench```
 
 #### Node
 
 1.   Install a recent version of Node.
-2.   Then run by ```npm run bench```
+2.   Run using command ```npm run bench```
 
 ### Contributing
 
