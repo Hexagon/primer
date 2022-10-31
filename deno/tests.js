@@ -1,6 +1,6 @@
 import { assertEquals } from "https://deno.land/std@0.160.0/testing/asserts.ts";
 
-import { AllImplementations } from "./implementations/importer.js";
+import { AllImplementations } from "./importer.js";
 console.log("");
 console.log("Activated implementations:")
 

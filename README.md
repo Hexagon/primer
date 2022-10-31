@@ -1,6 +1,6 @@
 ## primer
 
-Benchmarking project showing prime number calculation on pure JavaScript vs. WASM in Node and/or Deno.
+Benchmarking project showing prime number calculation on pure JavaScript vs. WASM in Node, Deno and Bun.
 
 <img src="/primer.png">
 
@@ -17,6 +17,11 @@ No special tools required. Just make sure the runtime you want to benchmark is i
 
 1.   Install a recent version of Node.
 2.   Run using command ```npm run bench```
+
+#### Bun
+
+1.   Install a recent version of Bun.
+2.   Run using command ```bun run bun/bench.js```
 
 ### Contributing
 
