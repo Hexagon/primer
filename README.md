@@ -25,7 +25,7 @@ If you want to use bun in a devcontainer, follow the instructions at [https://bu
 1.   Install a recent version of Bun, see [https://bun.sh/](https://bun.sh/).
 2.   Run using command ```bun run bench:bun```
 
-###¤ Full benchmark
+#### Full benchmark
 
 1.   Make sure all runtimes listed above is installed
 2.   Run using command ```deno task bench:all```
