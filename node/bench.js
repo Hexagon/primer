@@ -2,16 +2,20 @@ import Benchmark from "benchmark";
 
 import { AllImplementations } from "./importer.js";
 
-console.log("Runtime information:");
-console.log("\tRuntime:\tNode.js (" + process.versions.node + ")");
-console.log("\tEngine: \tV8 (" + process.versions.v8 + ")");
+if (!process.env.BENCH_QUIET) {
+    console.log("Runtime information:");
+    console.log("\tRuntime:\tNode.js (" + process.versions.node + ")");
+    console.log("\tEngine: \tV8 (" + process.versions.v8 + ")");
 
-console.log("\nAvailable implementations:")
-for(const impl of AllImplementations) {
-    console.log(`\t${(impl.name + ":").padEnd(15,' ')}${impl.description}`);
+    console.log("\nAvailable implementations:")
+    for(const impl of AllImplementations) {
+        console.log(`\t${(impl.name + ":").padEnd(15,' ')}${impl.description}`);
+    }
+
+    console.log("\nStarting benchmark");
+
 }
 
-console.log("\nStarting benchmark");
 const suite = new Benchmark.Suite;
 for(const impl of AllImplementations) {
     suite.add(`${impl.name.padEnd(16," ")}: Find all primes 1000000000-1000001000`, () => {
@@ -23,7 +27,7 @@ for(const impl of AllImplementations) {
 
 suite
     .on('cycle', function(event) {
-        console.log('\t' + String(event.target));
+        console.log('\t' + String(event.target) + " avg " + (event.target.stats.mean*1000).toFixed(2) + " ms/iter");
     })
     .on('complete', function() {
         console.log('\tFastest is ' + this.filter('fastest').map('name'));

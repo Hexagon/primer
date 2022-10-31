@@ -6,7 +6,9 @@
   "main": "bench.node.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "bench": "node node/bench.js"
+    "bench": "node node/bench.js",
+    "bench:bun": "bun run bun/bench.js",
+    "bench:all": "BENCH_QUIET=1 npm run bench && npm run bench:bun && deno task bench"
   },
   "repository": {
     "type": "git",

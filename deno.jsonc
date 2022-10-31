@@ -5,7 +5,8 @@
            --allow-read for dynamic loading of wasm
            --allow-net for dynamic loading of modules which in turns imports from deno.land
         */
-        "bench": "deno bench --quiet --unstable --allow-read --allow-net deno/bench.js",
+        "bench": "deno bench --quiet --unstable --allow-read --allow-net --allow-env deno/bench.js",
+        "bench:all": "BENCH_QUIET=1 npm run bench && BENCH_QUIET=1 npm run bench:bun && BENCH_QUIET=1 deno task bench",
         "test": "deno test --unstable --allow-read --allow-net deno/tests.js",
         /* 
            Build scripts for implementations
