@@ -18,11 +18,13 @@ If you want to use bun in a devcontainer, follow the instructions at [https://bu
 #### Node
 
 1.   Install a recent version of Node - or use CodeSpaces.
+2.   Install dependencies ```npm install```
 2.   Run using command ```npm run bench```
 
 #### Bun
 
 1.   Install a recent version of Bun, see [https://bun.sh/](https://bun.sh/).
+2.   Install dependencies ```bun install```
 2.   Run using command ```bun run bench:bun```
 
 #### Full benchmark
