@@ -18,7 +18,7 @@ if (!process.env.BENCH_QUIET) {
 
 const suite = new Benchmark.Suite;
 for(const impl of AllImplementations) {
-    suite.add(`${impl.name.padEnd(16," ")}: Find all primes 1000000000-1000001000`, () => {
+    suite.add(`${impl.name.padEnd(16," ")}: Find all primes 3000000000-3000001000`, () => {
         for(let i = 3000000000n; i <= 3000001000n; i++) {
             impl.checkPrime(i);
         }
